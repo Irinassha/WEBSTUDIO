@@ -42,6 +42,19 @@
             </li>
           </ul>
         </nav>
+
+
+         <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+        <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+          
+        </button>
+        
         <address class="addres list">
           <ul class="menu-contacts list">
             <li class="cont">
@@ -69,8 +82,8 @@
         </div>
       </section>
       <!-- секція 2 -->
-      <section class="section-two">
-        <div class="container">
+      <section class="section">
+        <div class="container container-two">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="list-two list">
             <li class="list-next">
@@ -125,12 +138,13 @@
         </div>
       </section>
       <!-- секція 3 -->
-      <section class="section-three">
+      <section class="section section-three">
         <div class="container container-three">
           <h2 class="title-two">What are we doing</h2>
           <ul class="list-img list">
             <li class="img-list">
               <img
+                srcset="./images/cection2/monitor-desktop@2x.jpg 2x"
                 src="./images/cection2/monitor.jpg"
                 alt="monitor"
                 width="360"
@@ -139,6 +153,7 @@
             </li>
             <li class="img-list">
               <img
+                srcset="./images/cection2/telephone-desktop@2x.jpg 2x"
                 src="./images/cection2/telephone.jpg"
                 alt="telephone"
                 width="360"
@@ -147,6 +162,7 @@
             </li>
             <li class="img-list">
               <img
+                srcset="./images/cection2/monitor-telephone-desktop@2x.jpg 2x"
                 src="./images/cection2/monitor-telephone.jpg"
                 alt="monitor-telephone"
                 width="360"
@@ -157,17 +173,65 @@
         </div>
       </section>
       <!-- секція 4 -->
-      <section class="section-four">
+      <section class="section section-four">
         <div class="container cont-four">
           <h2 class="title-two">Our Team</h2>
           <ul class="list-img-four list">
             <li class="section-four-list">
-              <img
-                src="./images/cection3/mark-guerrero.jpg"
-                alt="Product Designer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/cection3/webp-desktop/mark-guerrero-desktop1x.webp  1x,
+                    ./images/cection3/webp-desktop/mark-guerrero-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1158px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/cection3/desktop/mark-guerrero-desktop1x.jpg  1x,
+                    ./images/cection3/desktop/mark-guerrero-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/cection3/webp-tablet/mark-guerrero-tablet1x.webp  1x,
+                    ./images/cection3/webp-tablet/mark-guerrero-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/cection3/tablet/mark-guerrero-tablet1x.jpg  1x,
+                    ./images/cection3/tablet/mark-guerrero-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  media="(min-width: 468px)"
+                  srcset="
+                    ./images/cection3/webp-mobail/mark-guerrero-mobile1x.webp  1x,
+                    ./images/cection3/webp-mobail/mark-guerrero-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/cection3/mobile/mark-guerrero-mobile1x.jpg  1x,
+                    ./images/cection3/mobile/mark-guerrero-mobile@2x.jpg 2x
+                  "
+                  media="(min-width:468px)"
+                />
+                <img
+                  src="./images/cection3/mark-guerrero.jpg"
+                  alt="Product Designer"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="card-cont">
                 <h3 class="title-card">Mark Guerrero</h3>
                 <p class="text-card">Product Designer</p>
@@ -204,12 +268,62 @@
               </div>
             </li>
             <li class="section-four-list">
-              <img
-                src="./images/cection3/tom-ford.jpg"
-                alt="Frontend Developer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px )"
+                  srcset="
+                    ./images/cection3/webp-desktop/mark-guerrero-desktop1x.webp 1x,
+                    /images/cection3/webp-desktop/mark-guerrero-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/cection3/desktop/tom-ford-desktop1x.jpg  1x,
+                    ./images/cection3/desktop/tom-ford-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)"
+                />
+
+                <source
+                  media="(min-width: 768px )"
+                  srcset="
+                    ./images/cection3/webp-tablet/tom-ford-tablet1x.webp  1x,
+                    ./images/cection3/webp-tablet/tom-ford-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/cection3/tablet/tom-ford-tablet1x.jpg  1x,
+                    ./images/cection3/tablet/tom-ford-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  media="(min-width: 468px )"
+                  srcset="
+                    ./images/cection3/mobile/tom-ford-mobile1x.jpg  1x,
+                    ./images/cection3/mobile/tom-ford-mobile@2x.jpg 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/cection3/mobile/tom-ford-mobile1x.jpg  1x,
+                    ./images/cection3/mobile/tom-ford-mobile@2x.jpg 2x
+                  "
+                  media="(min-width:468px)"
+                />
+                <img
+                  src="./images/cection3/tom-ford.jpg"
+                  alt="Frontend Developer"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="card-cont">
                 <h3 class="title-card">Tom Ford</h3>
                 <p class="text-card">Frontend Developer</p>
@@ -246,12 +360,60 @@
               </div>
             </li>
             <li class="section-four-list">
-              <img
-                src="./images/cection3/camila-garcia.jpg"
-                alt="Marketing"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/cection3/webp-desktop/camila-garcia-dekstop1x.webp  1x,
+                    ./images/cection3/webp-desktop/camila-garcia-dekstop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/cection3/desktop/camila-garcia-dekstop1x.jpg  1x,
+                    ./images/cection3/desktop/camila-garcia-dekstop@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/cection3/webp-tablet/camila-garcia-tablet1x.webp  1x,
+                    ./images/cection3/webp-tablet/camila-garcia-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/cection3/tablet/camila-garcia-tablet1x.jpg  1x,
+                    ./images/cection3/tablet/camila-garcia-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  media="(min-width: 468px)"
+                  srcset="
+                    ./images/cection3/webp-mobail/camila-garcia-mobile1x.webp  1x,
+                    ./images/cection3/webp-mobail/camila-garcia-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/cection3/mobile/camila-garcia-mobile1x.jpg  1x,
+                    ./images/cection3/mobile/camila-garcia-mobile@2x.jpg 2x
+                  "
+                  media="(min-width:468px)"
+                />
+                <img
+                  src="./images/cection3/camila-garcia.jpg"
+                  alt="Marketing"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="card-cont">
                 <h3 class="title-card">Camila Garcia</h3>
                 <p class="text-card">Marketing</p>
@@ -288,12 +450,61 @@
               </div>
             </li>
             <li class="section-four-list">
-              <img
-                src="./images/cection3/daniel-wilson.jpg"
-                alt="UI Designer"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/cection3/webp-desktop/daniel-wilson-desktop1x.webp  1x,
+                    ./images/cection3/webp-desktop/daniel-wilson-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/cection3/desktop/daniel-wilson-desktop1x.jpg 1x,
+                    /images/cection3/desktop/daniel-wilson-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1158px)"
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/cection3/webp-tablet/daniel-wilson-tablet1x.webp  1x,
+                    ./images/cection3/webp-tablet/daniel-wilson-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/cection3/tablet/daniel-wilson-tablet1x.jpg 1x,
+                    /images/cection3/tablet/daniel-wilson-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  media="(min-width: 468px)"
+                  srcset="
+                    ./images/cection3/webp-mobail/daniel-wilson-mobile1x.webp  1x,
+                    ./images/cection3/webp-mobail/daniel-wilson-mobile@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/cection3/mobile/daniel-wilson-mobile1x.jpg  1x,
+                    ./images/cection3/mobile/daniel-wilson-mobile@2x.jpg 2x
+                  "
+                  media="(min-width:468px)"
+                />
+                <img
+                  src="./images/cection3/daniel-wilson.jpg"
+                  alt="UI Designer"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="card-cont">
                 <h3 class="title-card">Daniel Wilson</h3>
                 <p class="text-card">UI Designer</p>
@@ -333,8 +544,8 @@
         </div>
       </section>
       <!--    секція 5    -->
-      <section class="section-five">
-        <div class="container">
+      <section class="section">
+        <div class="container cont-five">
           <h2 class="title-two">Customers</h2>
           <ul class="list-customers list">
             <li class="list-five link">
@@ -443,14 +654,14 @@
             <button type="submit" class="btn-email-footer">
               Subscribe
               <svg class="email-icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-Framefooter"></use>
-                </svg>
+                <use href="./images/icons.svg#icon-Framefooter"></use>
+              </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
-
+    <!--  modal-window  -->
     <div class="backgrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -536,7 +747,7 @@
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the  &nbsp;
+              I accept the terms and conditions of the &nbsp;
               <a href="#" class="policy">Privacy Policy</a>
             </label>
           </div>
@@ -545,6 +756,88 @@
         </form>
       </div>
     </div>
+
+    <div class=" menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle mobile-menu-toggle js-close-menu">
+        <svg class="close-black-mobile" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      
+         <nav class="nav-header list">
+         
+       <ul class="mobile-menu list">
+            <li class="item link">
+              <a class="menu-item-mobile menu-item-link-s link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="item link">
+              <a class="menu-item-mobile link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="item link">
+              <a class="menu-item-mobile link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="addres-mobile list">
+          <ul class="menu-contacts-mobile list">
+             <li class="cont">
+              <a href="tel:+110001111111" class="menu-cont-mobile link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="cont">
+              <a href="mailto:info@devstudio.com" class="menu-cont-email-mobile link"
+                >info@devstudio.com</a
+              >
+            </li>
+           
+          </ul>
+        </address>
+        <div class="mobile-social-form">
+          <ul class="social-list-footer-mobile list">
+            <li class="social-li-f link">
+              <a href="#" class="social-list-link-footer">
+                <svg class="social-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-li-f link">
+              <a href="#" class="social-list-link-footer">
+                <svg class="social-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-li-f link">
+              <a href="#" class="social-list-link-footer">
+                <svg class="social-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-li-f link">
+              <a href="#" class="social-list-link-footer">
+                <svg class="social-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedi"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
